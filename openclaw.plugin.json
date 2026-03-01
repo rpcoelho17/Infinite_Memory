@@ -1,0 +1,21 @@
+{
+  "id": "infinite-memory",
+  "name": "Infinite Memory",
+  "description": "Persistent, local-first memory and RAG. Stores every conversation in SQLite with hybrid BM25+vector search, temporal decay, rolling summaries, and document collections.",
+  "version": "0.1.0",
+  "kind": "memory",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "workspacePath": { "type": "string" },
+      "summarizationModel": { "type": "string", "default": "ollama/qwen3:8b" },
+      "debug": { "type": "boolean", "default": false }
+    }
+  },
+  "uiHints": {
+    "workspacePath": { "label": "Workspace Path", "placeholder": "~/.openclaw/workspace" },
+    "summarizationModel": { "label": "Summarization Model" },
+    "debug": { "label": "Debug Logging" }
+  }
+}
