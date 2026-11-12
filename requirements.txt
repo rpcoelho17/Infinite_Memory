@@ -1,0 +1,11 @@
+pypdf
+python-docx
+beautifulsoup4
+sentence-transformers
+torch
+flask
+waitress
+numpy
+langchain_experimental
+langchain_community
+requests
